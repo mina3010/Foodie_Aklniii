@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details_Profits"
+    android:background="#000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/Customer_Name_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:padding="19dp"
+        android:text="Mina Magid"
+        android:textStyle="bold"
+        android:textColor="#FFAB00"
+        android:textSize="24sp"
+        android:background="@drawable/order2"
+        android:layout_margin="10dp"
+        ></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RC_Customer_profits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/order2"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/btn1_start_normal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+        <TextView
+            android:id="@+id/Customer_TotalProfits_Details"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            android:text="00000"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="25sp"
+
+            ></TextView>
+        <TextView
+            android:id="@+id/Customer_EGY"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:textAlignment="textStart"
+            android:padding="10dp"
+            android:text="EGY"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="27sp"
+            android:layout_marginRight="80dp"
+            ></TextView>
+
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/Customer_Time_Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:text="seb 2019"
+            android:textStyle="bold"
+            android:textColor="#FFC400"
+            android:textSize="17sp"
+            android:layout_marginBottom="4dp"
+            ></TextView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aklniii</string>
+    <string name="menu_star">menu</string>
+    <string name="order_star">make order</string>
+    <string name="total">end of day</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/menu_bottom">
+    <item android:id="@+id/Cooker"
+        android:title="Cooker"
+        android:icon="@drawable/cooker"/>
+    <item android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/home_24dp"/>
+    <item android:id="@+id/Order"
+        android:title="Order"
+        android:icon="@drawable/help_center_24dp"/>
+</menu>

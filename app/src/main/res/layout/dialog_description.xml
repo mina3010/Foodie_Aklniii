@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Dialog">
+
+
+    <LinearLayout
+        android:background="#FFEA00"
+        android:orientation="vertical"
+        android:layout_width="310dp"
+        android:layout_height="420dp"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#050505"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:text="FOODIE"
+            android:textColor="#FFEA00">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Dialog_ok"
+            android:background="@drawable/b3_style"
+            android:text="ok"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFEA00"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <Button
+            android:id="@+id/Dialog_cancel"
+            android:background="@drawable/b3_style"
+            android:text="Cancel"
+            android:textColor="#FFEA00"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="305dp"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="42dp">
+
+
+        <EditText
+            android:id="@+id/customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFEFE"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#B6B648"
+            android:hint="Enter Customer Name ..."
+            android:padding="5dp"
+            >
+
+        </EditText>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RC_Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFEA00"
+            />
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:padding="10dp"
+            android:text="TOTAL PRICE"
+            android:textColor="#DF020202"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/order2"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"></TextView>
+        <TextView
+            android:id="@+id/total_menu"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:padding="10dp"
+            android:text="000.00"
+            android:textColor="#DF020202"
+            android:textSize="15sp"
+            android:background="#E4D583"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            ></TextView>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:padding="10dp"
+            android:text="Time"
+            android:textColor="#DF020202"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:background="@drawable/order2"
+            android:layout_marginEnd="10dp"
+
+            android:textAlignment="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

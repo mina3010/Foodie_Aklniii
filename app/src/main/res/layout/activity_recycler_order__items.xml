@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RC_Circle"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:padding="5dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custome_shape"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/Cat_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:text="Pizza"
+                android:textSize="30sp"
+                android:textColor="#FFEA00"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:background="@drawable/btn_normal"
+                android:textAlignment="center"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RC_order_Items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:text=" "
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@drawable/circle_notification"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="117dp"
+            android:layout_marginRight="33dp"
+            android:src="@drawable/correct"
+            app:layout_anchor="@id/RC_order_Items"
+            app:layout_anchorGravity="bottom|right|end"
+            />
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/badge_notification"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/Show_Order"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toRightOf="@+id/Show_Order"
+            app:badgeBackground="@drawable/badge"
+            app:maxTextLength="2"
+            app:layout_anchor="@id/RC_order_Items"
+            app:layout_anchorGravity="bottom|right|end"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"/>
+
+
+        <com.andremion.counterfab.CounterFab
+            android:id="@+id/Show_Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="#B18C04"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/correct"
+            app:layout_anchor="@id/RC_order_Items"
+            app:layout_anchorGravity="bottom|right|end"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_bottom"
+        android:id="@+id/frameLayout"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_bar_nav"
+        app:menu="@menu/bottom_bar"
+        app:itemTextColor="#A4000000"
+        app:itemBackground="@color/black2"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemIconSize="35dp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+

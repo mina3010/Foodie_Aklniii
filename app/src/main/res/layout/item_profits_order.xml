@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#000000"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Profits_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#EBBE0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.85">
+
+                <TextView
+                    android:id="@+id/Name_item_profits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:padding="10dp"
+                    android:text="PIZZA CHICKEN"
+                    android:textColor="#DF020202"
+                    android:textSize="20sp"
+                    android:background="@drawable/order2"
+                    android:layout_marginBottom="4dp"
+                    ></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="5dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="QUANTITY"
+                        android:textColor="#DF020202"
+                        android:textSize="15sp"
+                        android:fontFamily="serif-monospace"
+                        android:background="@drawable/order2"
+                        android:layout_marginEnd="10dp"
+                        android:textAlignment="center"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:padding="10dp"
+                        android:text="UNIT PRICE"
+                        android:textColor="#DF020202"
+                        android:textSize="15sp"
+                        android:background="@drawable/order2"
+                        android:layout_marginEnd="10dp"
+                        android:textAlignment="center"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:padding="10dp"
+                        android:text="TOTAL"
+                        android:textColor="#DF020202"
+                        android:textSize="15sp"
+                        android:background="@drawable/order2"
+                        android:textAlignment="center"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/Quantity_item_profits"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="serif-monospace"
+                        android:padding="10dp"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="#DF020202"
+                        android:textSize="20sp"
+                        android:background="@drawable/order2"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/UnitPrice_item_profits"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="serif-monospace"
+                        android:padding="10dp"
+                        android:text="999.99"
+                        android:textColor="#DF020202"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:background="@drawable/order2"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/Total_item_profits"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="serif-monospace"
+                        android:padding="10dp"
+                        android:text="1889.99"
+                        android:textColor="#DF020202"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:background="@drawable/order2"
+                        android:layout_weight="1"
+                        ></TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

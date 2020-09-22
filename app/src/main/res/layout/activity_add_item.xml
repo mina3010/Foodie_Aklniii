@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#020202">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_Add_Item"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.85">
+                <ImageView
+                    android:id="@+id/Add_Item_image"
+                    android:onClick="openGallary"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camera_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="1.0"
+                    />
+
+                <EditText
+                    android:id="@+id/Add_Item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#00EB1E1E"
+                    android:backgroundTintMode="add"
+                    android:hint="Enter Item Name"
+                    android:textColor="#DDFADB07"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/Add_Item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#00EB1E1E"
+                    android:backgroundTintMode="add"
+                    android:hint="Enter Item Price"
+                    android:textColor="#DDFADB07"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/Add_Item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#00EB1E1E"
+                    android:backgroundTintMode="add"
+                    android:hint="Enter Item Description"
+                    android:textColor="#DDFADB07"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </EditText>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/addNewItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/b2_style"
+        android:text="add new ITem"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Add_Catigory_card"
+        app:layout_constraintVertical_bias="0.293">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.foodie">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_aklnii"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_aklnii_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Details_Profits"></activity>
+        <activity android:name=".Total_Profits" />
+        <activity
+            android:name=".startActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".recycler_order_Items"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".recyclerOrder"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".add_item"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".recyclerItems"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".recyeclerCatigory"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".add_catigory"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.yourdomain.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

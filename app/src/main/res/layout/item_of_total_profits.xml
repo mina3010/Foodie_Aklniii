@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#000"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Item_Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FF1744"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.85">
+
+                <TextView
+                    android:id="@+id/Customer_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:padding="12dp"
+                    android:text="Mina Magid"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:background="@drawable/order2"
+                    android:layout_marginBottom="4dp"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/Customer_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:text="seb 2019"
+                    android:textStyle="bold"
+                    android:textColor="#FFC400"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="4dp"
+                    ></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/btn1_start_normal"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    >
+                    <TextView
+                        android:id="@+id/Customer_TotalProfits"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:textAlignment="textEnd"
+                        android:padding="5dp"
+                        android:text="00000"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+
+                        ></TextView>
+                    <TextView
+                        android:id="@+id/Customer_EGY"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:textAlignment="textStart"
+                        android:padding="10dp"
+                        android:text="EGY"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="27sp"
+                        android:layout_marginRight="80dp"
+                        ></TextView>
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/show_Details_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/b3_style"
+                    android:drawableEnd="@drawable/details_icon"
+                    android:drawablePadding="-50dp"
+                    android:paddingRight="60dp"
+                    android:text="Details Order"
+                    android:textAlignment="center"
+                    android:textColor="#FFD80D"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Item_Of_Order_Image">
+
+                </Button>
+
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

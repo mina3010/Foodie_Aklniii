@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Connect_With_Developer"
+        android:title="Connect With Developer"
+        android:icon="@drawable/connect_developer_24dp"/>
+    <item android:id="@+id/About"
+        android:title="About"
+        android:icon="@drawable/about_24dp"/>
+    <item android:id="@+id/Help_Center"
+        android:title="Help Center"
+        android:icon="@drawable/help_center_24dp"/>
+</menu>
